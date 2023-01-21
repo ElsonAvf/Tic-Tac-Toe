@@ -88,9 +88,11 @@
     const addGameboardListeners = function() {
       gameboard.forEach((element) => {
         element.addEventListener('click', () => {
+          if (!element.textContent) {
           element.textContent = player.getChoice();
           player.togglePlayedStatus();
           ai.play(player, gameboard, endgame());
+        };
         });
       });
     };
