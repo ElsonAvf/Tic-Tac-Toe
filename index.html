@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="scripts/script.js" defer></script>
         <title>Tic Tac Toe</title>
     </head>
     <body>
@@ -22,17 +23,17 @@
           </ul>
         </div>
         
-        <div id="first-absolute-container" class="hidden">
+        <div id="first-absolute-container">
           <div id="X-or-O">
             <h1>CHOOSE</h1>
-            <div>X</div>
-            <div>O</div>
+            <div id="x">X</div>
+            <div id="o">O</div>
           </div>
         </div>
         
         <div id="second-absolute-container" class="hidden">
           <div id="play-again">
-            <div id="messenger">You Win</div>
+            <div id="messenger"></div>
             <button type="button">Play Again</button>
           </div>
         </div>
