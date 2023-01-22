@@ -116,7 +116,7 @@
             won = true;
         } else if (checkerArr[6] && checkerArr[6] && checkerArr[6] === checkerArr[7] && checkerArr[7] === checkerArr[8]) {
             reset();
-            win(player, checkerArr[4]);
+            win(player, checkerArr[6]);
             won = true;
           //Vertical
         } else if (checkerArr[0] && checkerArr[0] === checkerArr[3] && checkerArr[3] === checkerArr[6]) {
@@ -145,7 +145,7 @@
     
     const win = function(player, winner) {
       if (player.getChoice() === winner) {
-        document.querySelector('#messenger').textContent = 'You Win';
+        document.querySelector('#messenger').textContent = 'You Won';
       } else {
         document.querySelector('#messenger').textContent = 'You Lose';
       };
